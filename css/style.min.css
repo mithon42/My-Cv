@@ -1,0 +1,275 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #cbcbcb;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #11999e;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+hr {
+  border: 0.1rem solid #333;
+  margin: 1.8rem 0;
+}
+
+.profile-hr {
+  border: 0.2rem solid #333;
+  margin: 1.8rem 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.wight-left {
+  width: 30%;
+}
+
+.wight-right {
+  width: 70%;
+}
+
+.clear-div {
+  clear: both;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+
+.m {
+  margin: 1rem;
+}
+
+.mr {
+  margin-right: 2rem;
+}
+
+.ml {
+  margin-left: 2rem;
+}
+
+.mb-4px {
+  margin-bottom: .4rem;
+}
+
+.p {
+  padding: 1rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.pt {
+  padding-top: 1rem;
+}
+
+.pb {
+  padding-bottom: 1rem;
+}
+
+.font-13px {
+  font-size: 1.3rem;
+}
+
+.font-11px {
+  font-size: 1.1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  background-color: #e4f9f594;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.container header img.profile-img {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.container header .profile-bio {
+  padding-top: 2rem;
+}
+
+.container header .profile-bio .float-left {
+  margin-left: 1.5rem;
+}
+
+.container header .profile-bio .float-right a, .container header .profile-bio .float-right p {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.container header .profile-bio .float-right span {
+  font-size: 1.5rem;
+}
+
+.container header .profile-bio .float-right p:hover {
+  color: #f54545;
+}
+
+.container header .profile-bio .float-right a:hover {
+  color: #f54545;
+}
+
+.container main section#education .wight-right .float-left a {
+  color: #f54545;
+}
+
+.container footer {
+  overflow: hidden;
+  background: #000;
+  text-align: center;
+}
+
+.container footer p {
+  color: #fff;
+}
+
+.container footer p a {
+  color: #11999e;
+}
+
+.container footer p a:hover {
+  color: #f54545;
+}
+
+.container footer .here-btn {
+  padding: .4rem 1rem;
+  background-color: #11999e;
+  border-radius: .2rem;
+}
+
+.container footer .here-btn:hover {
+  color: #fff;
+  background-color: #f54545;
+}
+
+.container footer .here-btn:active {
+  background: green;
+  color: yellowgreen;
+}
+
+@media only screen and (max-width: 1080px) {
+  main section#education .wight-right .float-left {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+  .container header .profile-bio {
+    padding-top: 0;
+    float: right;
+  }
+  .container header .profile-bio .float-left {
+    float: none;
+    margin-left: 0;
+  }
+  .container header .profile-bio .float-right {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h3 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: #f54545;
+    color: #fff;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    border-radius: .3rem;
+    padding: .2rem 0;
+  }
+  h4 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  .container header img.profile-img {
+    float: none;
+    text-align: center;
+  }
+  .container header .profile-bio {
+    float: none;
+  }
+  .container header .profile-bio .float-left {
+    margin-bottom: .8rem;
+    float: none;
+  }
+  .container header h3 {
+    text-align: left;
+    color: #11999e;
+    background-color: transparent;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 0;
+  }
+  .container main section .wight-left {
+    float: none;
+    width: 100%;
+  }
+  .container main section .wight-right {
+    float: none;
+    width: 100%;
+  }
+  .container main section .p {
+    padding: 0;
+  }
+  .container footer p {
+    float: none;
+    margin-bottom: 1.5rem;
+  }
+  .container footer a {
+    float: none;
+  }
+}

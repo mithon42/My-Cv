@@ -1,0 +1,230 @@
+$body_bg: #cbcbcb;
+$container-bg: #e4f9f594;
+$white-bg: #fff;
+$red-color: #f54545;
+$black-color: #333;
+$heading-color: #11999e;
+
+
+
+html{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    background: $body_bg;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+// Common code css
+h1,h2,h3,h4,h5,h6{color: $heading-color;}
+h3{font-size: 1.5rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.1rem;}
+p{font-size: 1.2rem;}
+hr{border: .1rem solid $black-color; margin: 1.8rem 0;}
+.profile-hr{border: .2rem solid $black-color; margin: 1.8rem 0;}
+.float-left{float: left;}
+.float-right{float: right;}
+.wight-left{width: 30%;}
+.wight-right{width: 70%;}
+.clear-div{clear: both;}
+.mt{margin-top: 1rem;}
+.m{margin: 1rem;}
+.mr{margin-right: 2rem;}
+.ml{margin-left: 2rem;}
+.mb-4px{margin-bottom: .4rem;}
+.p{padding: 1rem;}
+.mb{margin-bottom: 1rem;}
+.pt{padding-top: 1rem;}
+.pb{padding-bottom: 1rem;}
+.font-13px{font-size: 1.3rem;}
+.font-11px{font-size: 1.1rem;}
+.bold{font-weight: bold;}
+
+
+// main code css
+.container{
+    max-width: 80%;
+    margin: auto;
+    background-color: $container-bg;
+    padding: 0 2rem;
+    overflow: hidden;
+
+
+    // Profile Area **********
+    header{
+        img.profile-img{
+            width: 80px;
+            border-radius: 50%;
+            border: 3px solid $white-bg;
+        }
+        .profile-bio{
+            padding-top: 2rem;
+            .float-left{
+                margin-left: 1.5rem;
+            }
+            .float-right{
+                a,p{
+                    font-size: 1.4rem;
+                    color: $black-color;
+                }
+                span{
+                    font-size: 1.5rem;
+                }
+                p:hover{
+                    color: $red-color;
+                }
+                a:hover{
+                    color: $red-color;
+                }
+            }
+        }
+    }
+    main{
+        section#education{
+          .wight-right{
+              .float-left{
+                a{
+                    
+                    color: $red-color;
+                }
+              }
+          }  
+        }
+    }
+    // Footer ********************
+    footer{
+        overflow: hidden;
+        background: #000;
+        text-align: center;
+        p{
+            color: #fff;
+            a{
+                color: $heading-color;
+            }
+            a:hover{
+                color: $red-color;
+            }
+        }
+        .here-btn{
+            padding: .4rem 1rem;
+            background-color: $heading-color;
+            border-radius: .2rem;
+        }
+        .here-btn:hover{color: $white-bg; background-color: $red-color;}
+        .here-btn:active{background: green; color: yellowgreen;}
+    }
+}
+
+
+
+
+
+
+
+// Responcive Css
+@media only screen and (max-width: 1080px){
+    main{
+        section#education{
+          .wight-right{
+              .float-left{
+                margin-right: 0;
+                margin-left: 0;
+              }
+          }  
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 95%;
+    }
+}
+@media only screen and (max-width: 575px){
+    .container{
+        max-width: 100%;
+        header{
+            .profile-bio{
+                padding-top: 0;
+                float: right;
+                .float-left{
+                    float: none;
+                    margin-left: 0;
+                }
+                .float-right{
+                    float: none;   
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px){
+    h3{
+        font-size: 1.7rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        background-color: $red-color;
+        color: $white-bg;
+        margin-right: 6rem;
+        margin-left: 6rem;
+        border-radius: .3rem;
+        padding: .2rem 0;
+    }
+    h4{
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+    .container{
+        header{
+            img.profile-img{
+                float: none;
+                text-align: center;
+            }
+            .profile-bio{
+                float: none;
+                .float-left{
+                    margin-bottom: .8rem;
+                    float: none;
+                }
+            }
+            h3{
+                text-align: left;
+                color: $heading-color;
+                background-color: transparent;
+                margin: 0;
+                font-size: 1.3rem;
+                padding: 0;
+            }
+        }
+        main{
+            section{
+                .wight-left{
+                    float: none;
+                    width: 100%;
+                }
+                .wight-right{
+                    float: none;
+                    width: 100%;
+                }
+                .p{
+                    padding: 0;
+                }  
+            }
+        }
+        footer{
+            p{
+                float: none;
+                margin-bottom: 1.5rem;
+            }
+            a{
+                float: none;
+            }
+        }
+    }
+}
